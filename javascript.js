@@ -39,8 +39,13 @@ function onButtonMult() {
 function onButtonDivide() {
   makeOperation('/');
 }
+function onOperationButtonClick(eventObject) {
+  let clickedElement = eventObject.currentTarget;
+  let operation = clickedElement.innerHTML;
+  makeOperation(operation)
+}
 
-buttonPlus.addEventListener('click', onButtonPlus);
-buttonMinus.addEventListener('click', onButtonMinus);
-buttonMult.addEventListener('click', onButtonMult);
-buttonDivide.addEventListener('click', onButtonDivide);
+buttonPlus.addEventListener('click', onOperationButtonClick);
+buttonMinus.addEventListener('click', onOperationButtonClick);
+buttonMult.addEventListener('click', onOperationButtonClick);
+buttonDivide.addEventListener('click', onOperationButtonClick);
