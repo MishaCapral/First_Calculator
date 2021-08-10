@@ -1,0 +1,23 @@
+.misha-calculator{
+  width:500px;
+  margin: 0 auto;
+  text-align: center;
+  background-color:rgb(106, 150, 187);
+  padding: 20px;
+  border: 2px solid black;
+}
+.operation-buttons-block{
+  border-bottom: 1px solid black;
+}
+.operation-buttons-block button{
+  height: 30px;
+  width: 30px;
+  margin: 20px ;
+}
+.inputs-block .input-block label{
+  display: block;
+}
+.inputs-block .input-block{
+  display: inline-block;
+  padding: 10px;
+}
