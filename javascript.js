@@ -27,18 +27,7 @@ function makeOperation(operator) {
   alert(result);
 }
 
-function onButtonPlus() {
-  makeOperation('+');
-}
-function onButtonMinus() {
-  makeOperation('-');
-}
-function onButtonMult() {
-  makeOperation('*');
-}
-function onButtonDivide() {
-  makeOperation('/');
-}
+
 function onOperationButtonClick(eventObject) {
   let clickedElement = eventObject.currentTarget;
   let operation = clickedElement.innerHTML;
