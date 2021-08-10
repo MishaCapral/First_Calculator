@@ -34,7 +34,14 @@ function onOperationButtonClick(eventObject) {
   makeOperation(operation)
 }
 
-buttonPlus.addEventListener('click', onOperationButtonClick);
-buttonMinus.addEventListener('click', onOperationButtonClick);
-buttonMult.addEventListener('click', onOperationButtonClick);
-buttonDivide.addEventListener('click', onOperationButtonClick);
+let operationButtons = [buttonPlus, buttonMinus, buttonMult, buttonDivide];
+
+
+let i;
+
+for (i = 0; i < operationButtons.length; i++) {
+  let button = operationButtons[i]
+  button.addEventListener('click', onOperationButtonClick);
+
+}
+
