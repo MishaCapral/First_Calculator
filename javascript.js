@@ -5,23 +5,22 @@ let buttonDivide = document.getElementById('buttonDivide');
 let input1 = document.getElementById('number1');
 let input2 = document.getElementById('number2');
 
-function getNumber1() {
-  return +input1.value;
-}
-function getNumber2() {
-  return +input2.value;
-}
+
 
 function makeOperation(operator) {
+
+  let number1 = +input1.value;
+  let number2 = +input2.value;
+
   let result;
   if (operator === '+') {
-    result = getNumber1() + getNumber2();
+    result = number1 + number2;
   } else if (operator === '-') {
-    result = getNumber1() - getNumber2();
+    result = number1 - number2;
   } else if (operator === '*') {
-    result = getNumber1() * getNumber2();
+    result = number1 * number2;
   } else if (operator === '/') {
-    result = getNumber1() / getNumber2();
+    result = number1 / number2;
   } else {
     alert('operation is unknown')
   }
