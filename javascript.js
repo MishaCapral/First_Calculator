@@ -1,7 +1,6 @@
-let buttonPlus = document.getElementById('buttonPlus');
-let buttonMinus = document.getElementById('buttonMinus');
-let buttonMult = document.getElementById('buttonMult');
-let buttonDivide = document.getElementById('buttonDivide');
+
+let operationButtons = document.getElementsByClassName('operation-button')
+
 let input1 = document.getElementById('number1');
 let input2 = document.getElementById('number2');
 
@@ -33,9 +32,6 @@ function onOperationButtonClick(eventObject) {
   let operation = clickedElement.innerHTML;
   makeOperation(operation)
 }
-
-let operationButtons = [buttonPlus, buttonMinus, buttonMult, buttonDivide];
-
 
 let i;
 
